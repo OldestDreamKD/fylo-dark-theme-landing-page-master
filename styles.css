@@ -29,7 +29,7 @@ body {
   width: 60%;
   display: flex;
   justify-content: space-around;
-  font-size: 1rem;
+  font-size: 1em;
 }
 
 .nav-items a {
@@ -75,7 +75,7 @@ body {
 }
 
 .feature {
-  padding: 50px 25px;
+  padding: 10% 20%;
 }
 
 .feature h3 {
@@ -92,7 +92,7 @@ body {
 }
 
 .cta-content {
-  margin: 50px 20px 0px 20px;
+  margin: 50px 10% 0px 10%;
 }
 
 .cta-content h2,
@@ -125,12 +125,13 @@ body {
 }
 
 .user {
+  width: 90%;
   background-color: hsl(219, 30%, 18%);
-  margin-bottom: 20px;
+  margin: 0px auto 20px auto;
   padding: 10px;
   font-family: "Open Sans", sans-serif;
   border-radius: 5px;
-  font-size: 0.7rem;
+  font-size: 0.7em;
   line-height: 1.6;
 }
 
@@ -146,7 +147,7 @@ body {
 }
 
 .profile p {
-  font-size: 0.6rem;
+  font-size: 0.8em;
   padding: 0;
   line-height: normal;
 }
@@ -167,18 +168,19 @@ body {
 .sign-up {
   border-radius: 10px;
   background-color: hsl(219, 30%, 18%);
-  margin: -150px 20px 10px 20px;
+  margin: -150px 25% 10px 25%;
   padding: 30px 10px 20px 10px;
+  position: relative;
 }
 
 .sign-up h2 {
-  font-size: 1rem;
+  font-size: 1.2em;
 }
 
 .sign-up p {
   color: rgb(223, 223, 223);
   padding: 15px 15px 25px 15px;
-  font-size: 0.8rem;
+  font-size: 0.8em;
 }
 
 .email-input input {
@@ -212,7 +214,7 @@ body {
 }
 
 .page-footer img {
-  width: 60%;
+  max-width: 55%;
 }
 
 .footer-container {
@@ -222,11 +224,6 @@ body {
 .footer-container p {
   text-align: start;
   margin-left: 25px;
-}
-
-.location img {
-  width: 10%;
-  height: 10%;
 }
 
 .location {
@@ -239,10 +236,16 @@ body {
   display: flex;
 }
 
+.location img {
+  max-width: 7%;
+  height: 5%;
+  padding-top: 5px;
+}
+
 .phone img,
 .email img {
-  width: 5%;
-  height: 5%;
+  max-width: 5%;
+  max-height: 5%;
 }
 
 .links {
@@ -261,7 +264,160 @@ body {
   margin-bottom: -25px;
 }
 .socials img {
-  width: 10%;
-  height: 10%;
+  max-width: 15%;
+  max-height: 15%;
   padding: 3px;
+}
+
+@media only screen and (min-width: 425px) {
+  .nav-items {
+    font-size: 1.3em;
+  }
+  #icon-arrow {
+    width: 3%;
+  }
+}
+@media only screen and (min-width: 765px) {
+  .features {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-evenly;
+  }
+  .testimonials {
+    display: flex;
+    position: relative;
+    z-index: 0;
+  }
+  #quotes {
+    position: absolute;
+    width: 5%;
+    height: 6%;
+    top: 125px;
+    left: 25px;
+  }
+
+  .user {
+    margin: 0px 20px;
+    padding: 5px 15px;
+    z-index: 2;
+  }
+}
+
+@media only screen and (min-width: 786px) {
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .location {
+    width: 30%;
+  }
+
+  .page-footer img {
+    padding-left: 10px;
+  }
+
+  .location img {
+    max-width: 12%;
+    height: 13%;
+    padding-top: 5px;
+  }
+
+  .phone img,
+  .email img {
+    max-width: 15%;
+    max-height: 15%;
+  }
+  .phone,
+  .links {
+    margin-top: 0px;
+  }
+
+  .sign-up {
+    padding: 30px 40px 20px 40px;
+    margin: -150px 10% 10px 10%;
+  }
+
+  .email-input {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .email-input input {
+    width: 65%;
+  }
+
+  .email-input button {
+    width: 30%;
+    margin-bottom: 10px;
+  }
+  .socials img {
+    max-width: 55%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+  .user {
+    margin: 0px 2%;
+    padding: 15px 20px;
+  }
+
+  .testimonials {
+    justify-content: space-around;
+  }
+
+  #quotes {
+    width: 3%;
+  }
+
+  #icon-arrow {
+    width: 5%;
+  }
+
+  .call-to-action {
+    display: flex;
+    padding-left: 5%;
+  }
+
+  .header {
+    width: 60%;
+    margin: auto;
+  }
+
+  .hero {
+    background-size: 100% 30%;
+  }
+
+  .header img {
+    width: 50%;
+  }
+
+  .nav {
+    display: flex;
+    margin: 2% 3%;
+    justify-content: space-between;
+  }
+
+  .nav-items {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .nav-items a {
+    margin: 0 5%;
+  }
+
+  .nav img {
+    width: 8%;
+  }
+
+  .sign-up {
+    padding: 30px 40px 20px 40px;
+    margin: -150px 25% 10px 25%;  
+  }
 }
